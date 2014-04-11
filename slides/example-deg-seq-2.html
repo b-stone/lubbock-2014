@@ -17,51 +17,44 @@
     <script type="text/javascript" src="../js/d3.v3.js"></script>
     <script type="text/javascript" src="../js/slide.js"></script>
 
-   <script type="text/javascript">
-      var substeps = ['one', 'two', 'three'];
-
-      function step(cur_step) {
-        d3.select("#" + cur_step).style("display", "inherit")
-      };
-    </script>
 
   </head>
   <body>
 	
     <h2>Example</h2>
 
-	<p id='one', style='display:none;'>Let $S = \Bbbk[x,y,z]$ and $M = S/(x,y^2,z^2)$.</p>
+	<p>Let $S = \Bbbk[x,y,z]$ and $M = S/(x,y^2,z^2)$.</p>
 
-	<p id='two', style='display:none;'>
+	<p>
 	\begin{align*}
 	\beta(M) &= \begin{pmatrix}
-	1&1&\text{.}&\text{.}\\
-	\text{.}&2&2&\text{.}\\
-	\text{.}&\text{.}&1&1\\
-	\end{pmatrix} & \phantom{= \begin{pmatrix}
-	1&1&\text{.}&\text{.}\\
-	\text{.}&2&2&\text{.}\\
-	\text{.}&\text{.}&1&1\\
-	\end{pmatrix}}
+					\colorbox{lightgreen} 1 & \colorbox{pink} 1 & \text{.} & \text{.} \\
+					\text{.} & \colorbox{lightgreen} 2 & \colorbox{lightgreen} 2 & \text{.} \\
+					\text{.} & \text{.} & 1 & \colorbox{lightgreen} 1 \\
+				\end{pmatrix} & \phantom{= \begin{pmatrix}
+										1&1&\text{.}&\text{.}\\
+										\text{.}&2&2&\text{.}\\
+										\text{.}&\text{.}&1&1\\
+								\end{pmatrix}}
 	\end{align*}
 	</p>
 <br>	
-<p id='three' style="font-size:20px; display:none;">
+<p style="font-size:20px;">
 	\begin{align*}
-	&{\Large =  8}\; 
+	&{\large =  8}\; 
 	\begin{pmatrix}
-	 \frac{1}{15} & \frac{1}{8} &\text{.}&\text{.}\\
-	\text{.}&\text{.}& \frac{1}{12} &\text{.}\\
-	\text{.}&\text{.}&\text{.}& \frac{1}{40} \\
+	\colorbox{pink}{$\frac{1}{15}$} & \colorbox{pink}{$\frac{1}{8}$} &\text{.}&\text{.}\\
+	\text{.}&\text{.}& \colorbox{pink}{$\frac{1}{12}$} &\text{.}\\
+	\text{.}&\text{.}&\text{.}& \colorbox{pink}{$\frac{1}{40}$} \\
 	\end{pmatrix}\;  
-	{\Large +\; 
+	{\large +\; 
 	8}\; 
 	\begin{pmatrix}
-	 \frac{1}{30} &\text{.}&\text{.}&\text{.}\\
-	\text{.}& \frac{1}{6} & \frac{1}{6} &\text{.}\\
-	\text{.}&\text{.}&\text{.}& \frac{1}{30} \\
+	\colorbox{lightgreen}{$\frac{1}{30}$} &\text{.}&\text{.}&\text{.}\\
+	\text{.}& \colorbox{lightgreen}{$\frac{1}{6}$} & \colorbox{lightgreen}{$\frac{1}{6}$} &\text{.}\\
+	\text{.}&\text{.}&\text{.}& \colorbox{lightgreen}{$\frac{1}{30}$} \\
 	\end{pmatrix}\;  
-	{\Large +\; 
+	{\large +\; 
 	8}\;
 	\begin{pmatrix}
 	 \frac{1}{40} &\text{.}&\text{.}&\text{.}\\
