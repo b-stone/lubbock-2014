@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+    <link type="text/css"  rel="stylesheet" href="../js/highlight.js/styles/tomorrow-night-bright.css">
+    <script type="text/javascript" src="../js/highlight.js/highlight.pack.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    
+    <script type="text/javascript" src="../mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript" src="../js/d3.v3.js"></script>
+    <script type="text/javascript" src="../js/slide.js"></script>
+
+   <script type="text/javascript">
+      var substeps = ['one', 'two', 'three'];
+
+      function step(cur_step) {
+        d3.select("#" + cur_step).style("display", "inherit")
+      };
+    </script>
+
+  </head>
+  <body>
+	
+    <h2>Betti Diagram Example</h2>
+
+	<p id='one', style='display:none;'>
+	Let $S = \Bbbk[x,y,z]$ and $M = S/(x,y^2,z^2)$.
+	</p>
+	<br>
+	<div id='two', style='display:none;'>
+	<h1 class='small'>Resolution of $M$</h1>
+	<p style="font-size:28px">
+	$$\stackrel{\stackrel{\phantom{\LARGE 0}}{\large 0}}{\phantom{0}}\; 
+	 	\stackrel{\stackrel{\ }{\large \leftarrow}}{\phantom{\large 0} }\;
+		\stackrel{\stackrel{\phantom{\LARGE 0}}{\large M}}{\phantom{0}}\;
+		\stackrel{\stackrel{\ }{\large \leftarrow}}{\phantom{\large 0} } \;
+		\stackrel{\stackrel{\LARGE S(-1)}{\oplus}}{S^2(-2)} \;
+		\stackrel{\stackrel{\ }{\large \leftarrow}}{\phantom{\large 0} } \;
+		\stackrel{\stackrel{\LARGE S^{\Large 2}(-3)}{\oplus}}{S(-4)} \;
+		\stackrel{\stackrel{\ }{\large \leftarrow}}{\phantom{\large 0} } \;
+		\stackrel{\stackrel{\phantom{\LARGE 0}}{\large S(-5)}}{\phantom{0}}\;
+		\stackrel{\stackrel{\ }{\large \leftarrow}}{\phantom{\large 0} } \;
+		\stackrel{\stackrel{\phantom{\LARGE 0}}{\large 0}}{\phantom{0}}$$
+	</p>
+	</div>
+
+	<div id='three', style='display:none;'>
+	<h1 class='small'>Betti Diagram</h1>
+	\begin{align*}
+	\beta(M) &= \begin{pmatrix}
+	1&1&\text{.}&\text{.}\\
+	\text{.}&2&2&\text{.}\\
+	\text{.}&\text{.}&1&1\\
+	\end{pmatrix}
+	\end{align*}
+	</div>
+	
+
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+    <link type="text/css"  rel="stylesheet" href="../js/highlight.js/styles/tomorrow-night-bright.css">
+    <script type="text/javascript" src="../js/highlight.js/highlight.pack.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    
+    <script type="text/javascript" src="../mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript" src="../js/d3.v3.js"></script>
+    <script type="text/javascript" src="../js/slide.js"></script>
+
+   <script type="text/javascript">
+      var substeps = ['one', 'two'];
+
+      function step(cur_step) {
+        d3.select("#" + cur_step).style("display", "inherit")
+      };
+    </script>
+
+  </head>
+  <body>
+	
+    <h2>More Notation</h2>
+
+	<div id='one', style='display:none;'>
+	<p class="mytab">$\pi({\bf d})$ is a particular diagram of a pure module $M$ with the associated degree sequence $${\bf d} = (d_0 < d_1 < \cdots < d_n).$$ Given two degree sequences ${\bf c}$ and ${\bf d}$, we say ${\bf c} \leq {\bf d}$ if $c_i \leq d_i$ for each $i$.</p>
+	</div>
+
+	<div id='two', style='display:none;'>
+	<h1 class='small'>Example</h1>		
+	<p style="font-size:20px">
+	$${\Large \pi(0,1,3,5) =}\; \begin{pmatrix}
+	 \frac{1}{15} & \frac{1}{8} &\text{.}&\text{.}\\
+	\text{.}&\text{.}& \frac{1}{12} &\text{.}\\
+	\text{.}&\text{.}&\text{.}& \frac{1}{40} \\
+	\end{pmatrix}$$
+	</p>
+	</div>
+
+
+
+  </body>
+</html>
